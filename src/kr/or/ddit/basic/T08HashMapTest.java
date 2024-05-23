@@ -32,6 +32,8 @@ public class T08HashMapTest {
 		
 		// key값들을 읽어와 데이터를 출력하는 방법
 		
+		
+		
 		// 방법1 => keySet() 메서드 사용하기
 		Set<String> keySet = map.keySet();
 		System.out.println("keySet : " + map.keySet());
@@ -49,6 +51,8 @@ public class T08HashMapTest {
 		}
 		System.out.println("=========================================");
 		
+		
+		
 		// 방법2 => 향상된 for문 'for-each문'을 이용한 방법
 		System.out.println("방법2 / 향상된 for문 'for-each문'을 이용한 방법");
 		for (String key : keySet) {
@@ -56,12 +60,16 @@ public class T08HashMapTest {
 		}
 		System.out.println("=========================================");
 		
+		
+		
 		// 방법3 => value 값들만 읽어와 출력하기
 		System.out.println("방법3 / value() 메서드 이용하는 방법");
 		for (String value : map.values()) {
 			System.out.println(value);
 		}
 		System.out.println("=========================================");
+		
+		
 		
 		// 방법4 => Map관련 클래스에는 Map.Entry타입의 내부 클래스가 만들어져 있다.
 		//		   Map에서 이 Map.Entry타입의 객체들을 Set타입의 객체로 반환해주는 메서드를 제공한다.

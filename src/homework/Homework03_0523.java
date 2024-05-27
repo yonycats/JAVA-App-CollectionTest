@@ -76,7 +76,7 @@ public class Homework03_0523 {
 		
 		
 		if (!hotelMap.containsKey(room)) {
-			System.out.println(room + "번방에는 체크인한 사람이 없습니다.");
+			System.out.println(room + "번 방에는 체크인한 사람이 없습니다.");
 			System.out.println();
 			return;
 		}

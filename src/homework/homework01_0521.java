@@ -8,7 +8,7 @@ import java.util.List;
 public class Homework01_0521 {
 	public static void main(String[] args) {
 		
-		/* 
+		/*
 		학번, 이름, 국어점수, 영어점수, 수학점수, 총점, 등수를 멤버로 갖는
 		  Student클래스를 만든다.
 		  생성자는 학번, 이름, 국어, 영어, 수학 점수만 매개변수로 받아서 처리한다.

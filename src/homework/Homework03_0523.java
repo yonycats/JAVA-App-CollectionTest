@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Homework03_0523 {
 	private Scanner sc = new Scanner(System.in);
@@ -51,12 +52,13 @@ public class Homework03_0523 {
 
 	private void roomState() {
 		Set<String> guestList = hotelMap.keySet();
+		TreeSet<String> guestListSort = new TreeSet<String>(guestList);
 		
 		System.out.println();
-		if (guestList.size() == 0) {
+		if (guestListSort.size() == 0) {
 			System.out.println("투숙객이 없습니다.");
 		} else {
-			Iterator<String> list = guestList.iterator();
+			Iterator<String> list = guestListSort.iterator();
 			
 			while (list.hasNext()) {
 				String room = list.next();
